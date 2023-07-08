@@ -2,6 +2,13 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+
+## Description
+
+This project took a functional Google Books API search engine built with RESTful API and refactored it into a MERN stack application with GraphQL and Apollo Server. 
+The application allows the user to create an account, sign in, search for books, add them to their profile, review previously saved books, and remove books from their list.
+
+
 ## Prerequisites:
 
 * Browsers - Chrome, Safari, Mozilla Firefox
@@ -12,12 +19,6 @@
 * Server - node.js, GraphQL
 * Database -MongoDB
 * Client - React.js
-
-
-## Description
-
-This project took a functional Google Books API search engine built with RESTful API and refactored it into a MERN stack application with GraphQL and Apollo Server. 
-The application allows the user to create an account, sign in, search for books, add them to their profile, review previously saved books, and remove books from their list.
 
 
 ## Installation
