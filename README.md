@@ -4,14 +4,14 @@
 
 ## Prerequisites:
 
-Browsers - Chrome, Safari, Mozilla Firefox
-Operating Systems - Windows and Mac
-Version Control Systems - Git and GitHub
-Coding Platform - Microsoft Visual Studio Code *Programming languages - HTML *Stylesheets - CSS *Script-file - Javascript
-Commands - Git and MS-DOS commands
-Server - node.js, GraphQL
-Database -MongoDB
-Client - React.js
+* Browsers - Chrome, Safari, Mozilla Firefox
+* Operating Systems - Windows and Mac
+* Version Control Systems - Git and GitHub
+* Coding Platform - Microsoft Visual Studio Code *Programming languages - HTML *Stylesheets - CSS *Script-file - Javascript
+* Commands - Git and MS-DOS commands
+* Server - node.js, GraphQL
+* Database -MongoDB
+* Client - React.js
 
 
 ## Description
