@@ -50,7 +50,6 @@ All saved books can be found in the "See your Books" section. A book can be remo
 
 ## Link to the deployed application 
 
-
 https://immense-lowlands-02686-0b649cffb45f.herokuapp.com/
 
 
