@@ -7,31 +7,33 @@ import {
   Col
 } from 'react-bootstrap';
 
-import { useQuery,useMutation } from '@apollo/client';
-import { QUERY_ME } from '../utils/queries';
-import { REMOVE_BOOK } from '../utils/mutations';
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
+import { useQuery, useMutation } from '@apollo/client';
+import { QUERY_ME } from '../utils/queries';
+import { REMOVE_BOOK } from '../utils/mutations';
 
 const SavedBooks = () => {
-  const {loading,data}=useQuery(QUERY_ME);
-  const [removeBook]=useMutation(REMOVE_BOOK);
-  const userData=data?.me||{}
-  console.log(userData)
+  const { loading, data } = useQuery(QUERY_ME)
+  const [removeBook] = useMutation(REMOVE_BOOK)
 
+  const userData = data?.me || {}
+  console.log(userData)
+  
   // create function that accepts the book's mongo _id value as param and deletes the book from the database
   const handleDeleteBook = async (bookId) => {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
-
+    
     if (!token) {
       return false;
     }
 
     try {
-      const { data } =await removeBook({
-        variables:{bookId}
+      await removeBook({
+        variables: { bookId }
       })
       removeBookId(bookId);
+
     } catch (err) {
       console.error(err);
     }
@@ -44,7 +46,7 @@ const SavedBooks = () => {
 
   return (
     <>
-      <div fluid className="text-light bg-dark p-5">
+      <div fluid className='text-light bg-dark p-5'>
         <Container>
           <h1>Viewing saved books!</h1>
         </Container>
